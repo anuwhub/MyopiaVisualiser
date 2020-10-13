@@ -13,6 +13,12 @@
   <style> body { padding: 0; margin: 0; } </style>
 </head>
 
-<body>
+<script type="text/javascript">
+   function blockMove() {
+      event.preventDefault() ;
+}
+</script>
+
+<body ontouchmove="blockMove()">
 </body>
 </html>
