@@ -25,8 +25,7 @@ function setup() {
   textAlign(LEFT, BOTTOM);
 }
 
-function mousePressed(){
-  console.log(mouseX, mouseY);
+function touchStarted(){
   return false;
 }
 
