@@ -15,9 +15,11 @@
 
 <script type="text/javascript">
    function blockMove() {
-     if (false) {
-        event.preventDefault();
-    }
+     //if (event.target.nodeName) {
+     //  event.preventDefault();
+     //}
+     aaa = createInput(event.target.nodeName);
+     aaa.position(100,100);
 }
 </script>
 
