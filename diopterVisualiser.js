@@ -25,10 +25,6 @@ function setup() {
   textAlign(LEFT, BOTTOM);
 }
 
-function touchStarted(){
-  return false;
-}
-
 function draw() {
   background(19, 200, 153);
   
@@ -102,7 +98,6 @@ function mouseDragged() {
   if (useMouse) {
     let diopter = cmToD(mouseX-54);
     if (diopter>0 && isFinite(diopter)) {
-      console.log("diopter equal to -"+diopter);
       far = diopter;
       near = far+dRange;
       
