@@ -15,7 +15,9 @@
 
 <script type="text/javascript">
    function blockMove() {
-      event.preventDefault() ;
+     if (event.target.nodeName !== 'INPUT') {
+        e.preventDefault();
+    }
 }
 </script>
 
